@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://res.cloudinary.com/dzkvyfnqh/image/upload/v1720934580/DeWatermark.ai_1720875315040_djnsw8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 700px;
+    padding-bottom: 700px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    color: #fff;
+    padding: 35px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(25px);
+    border: 2px solid #504F4A;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    justify-content: center;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 148px;
+    background: #fff;
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+    
+}
+
+form .user-details .input-box {
+    margin-bottom: 10px;
+    width: calc(50% - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #504F4A;
+    padding-left: 10px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: #DAF5FB;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #daf5fb;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+form .button input:hover {
+    background-color: #004d40;
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}
