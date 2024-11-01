@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-color: #f4f4f4;
+            background: linear-gradient(rgb(132, 182, 226),rgb(69, 101, 181));
+            margin: 0;
+            padding: 15px;
+            gap: 5px;
+        }
+        
+        .main {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            gap: 5px;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;font-size: 0.9em;
+        }
+        .inline{
+            margin: 5px;
+        }
+        .star{
+            color: red;
+            font: 0.5rem;
+        }
+        option{
+            gap: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #2883a7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: white;
+            color: #2883a7;
+            border: 1px solid #2883a7;
+        }
+        .img {
+            background-image: url('https://images.pexels.com/photos/1130980/pexels-photo-1130980.jpeg?cs=srgb&dl=assortment-book-bindings-books-1130980.jpg&fm=jpg'); /* Replace with your image URL */
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        p {
+            margin: 0 0 5px;
+            font-weight: bold;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .radio-group div {
+            margin-bottom: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img"></div>
+      <div class="form-body">
+        <form action="">
+          <label for="name" class="flex">
+            <p>Name <span class="star">*</span></p>
+            <input type="text"  class="inline" placeholder="First Name" required />
+            <input type="text"  class="inline" placeholder="Middle Name (optional)" />
+            <input type="text"  class="inline" placeholder="Last Name" required />
+          </label>
+          <label for="" class="flex">
+            <p>Date Of Birth <span class="star">*</span>:</p>
+            <input type="date" name="" id=""/>
+          </label>
+          <label for="" class="flex">
+            <p>Gender :</p>
+            <select name="" id="">
+                <option value="">Select</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+          </label>
+          <label for="" class="flex">
+            <p>Address</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </label>
+          <label for="" class="flex">
+            <p>Email<span class="star">*</span></p>
+            <input type="email" name="" id="" placeholder="ex : abc@xyz.pqr">
+          </label>
+          <label for="" class="flex">
+            <p>Mobile No:<span class="star">*</span></p>
+            <input type="number" name="" id="" placeholder="Enter your mobile number">
+          </label>
+          <label for="" class="flex radio-group">
+            <p>select Section<span class="star">*</span></p>
+            <div>CSE-A<input type="radio" name="" id="" ></div>
+            <div>CSE-B<input type="radio" name="" id="" ></div>
+            <div>CSE-C<input type="radio" name="" id="" ></div>
+            <div>CSE-D<input type="radio" name="" id="" ></div>
+        </label>
+          <label for="" class="flex">
+            <p>Select Course<span class="star">*</span></p>
+            <select name="" id="" required>
+                <option value="">Select</option>
+                <option value="">AWT</option>
+                <option value="">ADS</option>
+                <option value="">CN</option>
+                <option value="">DAA</option>
+                <option value="">DWDM</option>
+            </select>
+        </label>
+        <button type="submit">Register</button>
+      
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
