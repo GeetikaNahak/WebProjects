@@ -1,5 +1,5 @@
 import { useEffect, useState ,useRef} from 'react'
-
+import Counter from './components/react'
 import './App.css'
 import Navbar from './components/Navbar'
 import NewCard from './components/NewCard'
@@ -45,6 +45,7 @@ function App() {
           return <Todo todo={todo}/>
         })
       }
+      <Counter/>
     </>
   )
 }
